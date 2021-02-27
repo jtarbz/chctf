@@ -16,4 +16,8 @@ source code and random configuration for for the challenge.
 | 7.  	| Cyberhawks (CHC)      	| 0                   	| 70                          	| 70          	|
 
 # Graphs!
+CHCTF Challenge Graph
 ![CHCTF Challenge Graph](./chall_graph.png "CHCTF Challenge Graph")
+
+Attack/Defense Uptime Graph
+![Attack/Defense Uptime Graph](./ADUptime.png "Attack/Defense Uptime Graph")
