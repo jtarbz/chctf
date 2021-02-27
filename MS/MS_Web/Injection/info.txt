@@ -1,0 +1,4 @@
+An injection is when a piece of arbitrary code or values are passed to an input field and executed to gain access to important information including but not limited to:
+system root access, usernames and passwords, emails, source code, and more.Fortunately, injections can be prevented, read more here:
+https://owasp.org/www-project-top-ten/2017/A1_2017-Injection and answer the following questions.
+

@@ -1,0 +1,23 @@
+What type of database is commonly prone to Injection attacks?
+A. SQL
+B. NoSQL
+C. Expression Language
+D. All of the Above
+
+Answer: D
+
+How can injections be prevented, select all that apply:
+A. Use a safe API or Object Relational Mapping Tools
+B. Call dynamic queries without context-aware escaping directly from the interpreter.
+C. Use "whitelist" server-side validation
+D. Blindly trust frameworks and use older versions to ensure new vulnerabilities are not created.
+
+Answer: AC
+
+What is a commonly used value for the 'id', 'username', or 'password' field for an SQL injection?
+A. 'or '0'='2
+B. 'or 'Johnny'='Drop Tables
+C. DROP ALL TABLES == true
+D. 'or '1'='1
+
+Answer: D

@@ -1,0 +1,32 @@
+# IBM_Accountant
+## Prompt
+Help! I'm a brand new accountant working with an IBM mainframe! Recently, the mainframe and my personal calculator started 
+spitting out random stuff whenever I try to do basic math! Please help me, I don't want to be fired!
+## Challenge
+0100 1000 0100 1001 0100 1001 0100 1000 0100 1000 0100 1000 0100 1001 0100 1001 0100 1000 0100 1001 0100 1001 0100 1000 0100 1001 
+0100 1000 0100 1000 0100 1000 0100 1000 0100 1001 0100 1001 0100 1000 0100 1000 0100 1000 0100 1001 0100 1001 0100 1000 0100 1001 0100 1001 0100 1001 0100 1000 
+0100 1001 0100 1000 0100 1000 0100 1000 0100 1001 0100 1001 0100 1000 0100 1000 0100 1001 0100 1001 0100 1000 0100 1000 0100 1001 0100 1001 0100 1001 0100 1001 
+0100 1000 0100 1001 0100 1001 0100 1000 0100 1001 0100 1000 0100 1000 0100 1000 0100 1001 0100 1000 0100 1000 0100 1000 0100 1001 0100 1001 0100 1000 0100 1000 
+0100 1001 0100 1000 0100 1001 0100 1000 0100 1001 0100 1001 0100 1000 0100 1000 0100 1001 0100 1001 0100 1000 0100 1000 0100 1001 0100 1000 0100 1001 0100 1001 
+0100 1001 0100 1001 0100 1001 0100 1000 0100 1001 0100 1000 0100 1000 0100 1001 0100 1001 0100 1001 0100 1000 0100 1000 0100 1001 0100 1001 0100 1000 0100 1001 
+0100 1001 0100 1001 0100 1001 0100 1000 0100 1001 0100 1001 0100 1001 0100 1000 0100 1001 0100 1000 0100 1000 0100 1000 0100 1001 0100 1000 0100 1001 0100 1001 
+0100 1001 0100 1001 0100 1001 0100 1000 0100 1001 0100 1000 0100 1001 0100 1000 0100 1001 0100 1001 0100 1001 0100 1000 0100 1001 0100 1000 0100 1000 0100 1000 
+0100 1000 0100 1000 0100 1000 0100 1000 0100 1001 0100 1001 0100 1001 0100 1000 0100 1001 0100 1000 0100 1000 0100 1000 0100 1001 0100 1001 0100 1001 0100 1000 
+0100 1000 0100 1001 0100 1001 0100 1000 0100 1000 0100 1001 0100 1001 0100 1000 0100 1000 0100 1000 0100 1000 0100 1000 0100 1001 0100 1000 0100 1000 0100 1001 
+0100 1001 0100 1001 0100 1000 0100 1000 0100 1001 0100 1001 0100 1001 0100 1001 0100 1001 0100 1000 0100 1001
+
+## Hint
+How do calculators prevent floating-point errors?
+## Writeup
+#### Basics
+Binary-coded decimal, also known as BCD, are decimal numbers encoded as binary and represented by 4-8 bits. This was used a lot more prevalently in older computers, but it still exists today on machines made my IBM and almost all calculators due to its handling of floating-point numbers. You can read more here: https://en.wikipedia.org/wiki/Binary-coded_decimal. 
+
+##### Steps
+This is honestly a super simple challenge for the most part, and the only tricky part is actually realizing the BCD-encoding. 
+1. Decode the BCD using a from BCD converter such as the one found in CyberChef. This outputs in Decimal.
+2. Use some sort of text splitter to insert spaces or some other de-limiter in between the Decimal values. Try this site: https://onlinetexttools.com/split-text
+3. Decode the outputter Binary and you should see the flag.
+4. Remove the spaces in between each flag character and submit it.
+
+## Flag
+chctf{Def_Not_W@ts0N}
